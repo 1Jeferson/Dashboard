@@ -1,6 +1,7 @@
-import "./globals.css";
+import Sidebar from "@/components/sidebar";
 import { cn } from "@/lib/utils";
 import { Montserrat } from "next/font/google";
+import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
           montserrat.className
         )}
       >
+        <Sidebar />
         {children}
       </body>
     </html>
